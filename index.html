@@ -54,11 +54,155 @@
 
 		<!-- Main -->
 		<div id="main">
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="#">Welcome to my lens</a></h2>
+					<!-- Gallery Slider -->
+
+					<html>
+
+					<head>
+						<style>
+							.slideshow-container {
+								position: relative;
+								width: 100%;
+								height: 600px;
+								margin: auto;
+								overflow: hidden;
+							}
+
+							.slides {
+								display: flex;
+								width: 100%;
+								height: 100%;
+								position: relative;
+							}
+
+							.slide {
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								opacity: 0;
+								transition: opacity 1s;
+							}
+
+							.slide img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+
+							.description {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								background-color: rgba(0, 0, 0, 0.3);
+								color: #fff;
+								padding: 5px;
+							}
+
+							.show {
+								opacity: 1;
+							}
+						</style>
+					</head>
+
+					<body>
+						<div class="slideshow-container">
+							<div class="slides">
+								<div class="slide">
+									<img src="/images/IMG_emmalens.jpeg" alt="Image 1">
+									<p class="description">On the train to Jungfraujoch (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/IMG_Helsinki.jpeg" alt="Image 2">
+									<p class="description">Helsinki, Finland (2022)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/newzealand_Omarama .jpeg" alt="Image 3">
+									<p class="description">Omarama, Newzealand (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Newzealand_Tekapo.jpeg" alt="Image 4">
+									<p class="description">Tekapo, Newzealand (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Lucerne_Switzerlands.jpeg" alt="Image 5">
+									<p class="description">Lucerne, Switzerland (2019)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Venice_Italy.jpeg" alt="Image 6">
+									<p class="description">Venice, Italy (2018)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Olbia_italy.jpeg" alt="Image 7">
+									<p class="description">Olbia, Italy (2022)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Lisbao_Protugal_2020.jpeg" alt="Image 8">
+									<p class="description">Lisbao, Protugal (2020)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Budapest_2022.jpeg" alt="Image 9">
+									<p class="description">Budapest, Hungary (2022)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Amsterdam.jpeg" alt="Image 10">
+									<p class="description">Amsterdam at Night (2019)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Ghent, Belgium.jpeg" alt="Image 11">
+									<p class="description">Ghent, Belgium (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Florida_2022.jpeg" alt="Image 12">
+									<p class="description">Miami, Florida (2022)</p>
+								</div>
+
+							</div>
+						</div>
+						<script>
+							var slides = document.querySelectorAll('.slide');
+							var fistslide = slides[0];
+							var currentSlide = 0;
+
+							function nextSlide() {
+								if (currentSlide === slides.length - 1) {
+									currentSlide = 0;
+								} else {
+									currentSlide++;
+								}
+								slides.forEach(function (slide) {
+									slide.classList.remove('show');
+								});
+								slides[currentSlide].classList.add('show');
+							}
+
+							fistslide.classList.add('show');
+							setInterval(nextSlide, 5000);
+
+						</script>
+					</body>
+
+					</html>
+
+
+
+				</header>
+
+			</article>
 
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2><a href="#">Welcome to my lens</a></h2>
 					<p> Here's a little bit about myself. I was born and raised in Taiwan, and my educational journey
 						has taken me from the streets of Amsterdam to the halls of Duke University. I majored in
 						Communication Science at the University of Amsterdam, now I'm doing Data Science at Duke
@@ -70,213 +214,22 @@
 						find me whipping up something delicious in the kitchen, or with my camera in hand capturing
 						memories. </p>
 				</header>
-				<!-- Gallery Slider -->
 
-				<html>
 
-				<head>
-					<style>
-						.slideshow-container {
-							position: relative;
-							width: 100%;
-							height: 600px;
-							margin: auto;
-							overflow: hidden;
-						}
-
-						.slides {
-							display: flex;
-							width: 100%;
-							height: 100%;
-							position: relative;
-						}
-
-						.slide {
-							width: 100%;
-							height: 100%;
-							position: absolute;
-							top: 0;
-							left: 0;
-							opacity: 0;
-							transition: opacity 1s;
-						}
-
-						.slide img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
-
-						.description {
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							background-color: rgba(0, 0, 0, 0.3);
-							color: #fff;
-							padding: 5px;
-						}
-
-						.show {
-							opacity: 1;
-						}
-					</style>
-				</head>
-
-				<body>
-					<div class="slideshow-container">
-						<div class="slides">
-							<div class="slide">
-								<img src="/images/IMG_emmalens.jpeg" alt="Image 1">
-								<p class="description">On the train to Jungfraujoch (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/IMG_Helsinki.jpeg" alt="Image 2">
-								<p class="description">Helsinki, Finland (2022)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/newzealand_Omarama .jpeg" alt="Image 3">
-								<p class="description">Omarama, Newzealand (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Newzealand_Tekapo.jpeg" alt="Image 4">
-								<p class="description">Tekapo, Newzealand (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Lucerne_Switzerlands.jpeg" alt="Image 5">
-								<p class="description">Lucerne, Switzerland (2019)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Venice_Italy.jpeg" alt="Image 6">
-								<p class="description">Venice, Italy (2018)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Olbia_italy.jpeg" alt="Image 7">
-								<p class="description">Olbia, Italy (2022)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Lisbao_Protugal_2020.jpeg" alt="Image 8">
-								<p class="description">Lisbao, Protugal (2020)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Budapest_2022.jpeg" alt="Image 9">
-								<p class="description">Budapest, Hungary (2022)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Amsterdam.jpeg" alt="Image 10">
-								<p class="description">Amsterdam at Night (2019)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Ghent, Belgium.jpeg" alt="Image 11">
-								<p class="description">Ghent, Belgium (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Florida_2022.jpeg" alt="Image 12">
-								<p class="description">Miami, Florida (2022)</p>
-							</div>
-
-						</div>
+				<!-- Footer -->
+				<footer>
+					<div class="pagination">
+						<!--<a href="#" class="previous">Prev</a>-->
+						<a href="#" class="page active">1</a>
+						<a href="#" class="page">2</a>
+						<a href="#" class="page">3</a>
+						<span class="extra">&hellip;</span>
+						<a href="#" class="page">8</a>
+						<a href="#" class="page">9</a>
+						<a href="#" class="page">10</a>
+						<a href="#" class="next">Next</a>
 					</div>
-					<script>
-						var slides = document.querySelectorAll('.slide');
-						var currentSlide = 0;
-
-						function nextSlide() {
-							slides[currentSlide].classList.remove('show');
-							currentSlide = (currentSlide + 1) % slides.length;
-							slides[currentSlide].classList.add('show');
-						}
-
-						setInterval(nextSlide, 3500);
-					</script>
-				</body>
-
-				</html>
-
-
-
-				</header>
-
-			</article>
-
-			<!-- Posts -->
-			<section class="posts">
-				<article>
-					<header>
-						<h2><a>Containerized FastAPI with timely News
-								data</a></h2>
-					</header>
-					<a href="https://github.com/Emmawang00/fastapi_news" class="image fit"><img
-							src="images/fastapi_news.jpg" title="source: Unsplash" alt="" /></a>
-					<p>The web application is built to return JSON payload containing the news that are relevant to
-						what users want to read. Overall, it is developed using AWS cloud 9 as the environment and
-						queries from the Atlantic news website. The microservice was containerized in AWS Elastic
-						Container Registry (ECR) and pushed to production using AppRunner and FastAPI. Continuous
-						Integration is enacted through Github Actions and Continuous Deployment is performed through
-						configuring Build Server to deploy changes on build using AWS ECR and Code Build. </p>
-					<ul class="actions special">
-						<li><a href="https://github.com/Emmawang00/fastapi_news" class="button">Learn more</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h2><a>KPI analysis with MySQL Azure
-								Database</a></h2>
-					</header>
-					<a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="image fit"><img src="images/SQL.jpg"
-							title="source: Pexels" alt="" /></a>
-					<p>The project aims to design an interactive queries function of SQL by connecting the database from
-						Azure to evaluate the KPI performance.
-						Local Database (DB) connection to Azure is executed by using Azure Database for MySQL single
-						server(use Migration Wizard). In codespace, we can access Database which is exactly the same as
-						the Azure database, and with this, I created a Datawarehouse and loaded all the needed data from
-						the DB. Interactive queries can be perfromed in the codespace with the SQL interface. The goal
-						of this project is to let KPI evaluation be more efficient and updatable by connecting to a
-						cloud Database.</p>
-					<ul class="actions special">
-						<li><a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="button">Learn More</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h2><a>KPI analysis with MySQL Azure Database</a></h2>
-					</header>
-					<a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="image fit"><img src="images/SQL.jpg"
-							title="source: Pexels" alt="" /></a>
-					<p>The project aims to design an interactive queries function of SQL by connecting the database from
-						Azure to evaluate the KPI performance.
-						Local Database (DB) connection to Azure is executed by using Azure Database for MySQL single
-						server(use Migration Wizard). In codespace, we can access Database which is exactly the same as
-						the Azure database, and with this, I created a Datawarehouse and loaded all the needed data from
-						the DB. Interactive queries can be perfromed in the codespace with the SQL interface. The goal
-						of this project is to let KPI evaluation be more efficient and updatable by connecting to a
-						cloud Database.</p>
-					<ul class="actions special">
-						<li><a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="button">Learn More</a></li>
-					</ul>
-				</article>
-
-			</section>
-
-			<!-- Footer -->
-			<footer>
-				<div class="pagination">
-					<!--<a href="#" class="previous">Prev</a>-->
-					<a href="#" class="page active">1</a>
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<span class="extra">&hellip;</span>
-					<a href="#" class="page">8</a>
-					<a href="#" class="page">9</a>
-					<a href="#" class="page">10</a>
-					<a href="#" class="next">Next</a>
-				</div>
-			</footer>
+				</footer>
 
 		</div>
 
