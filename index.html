@@ -71,134 +71,137 @@
 						memories. </p>
 				</header>
 				<!-- Gallery Slider -->
-				<html>
+				<section class="posts">
+					<html>
 
-				<head>
-					<style>
-						.slideshow-container {
-							position: relative;
-							width: 100%;
-							height: 600px;
-							margin: auto;
-							overflow: hidden;
-						}
+					<head>
+						<style>
+							.slideshow-container {
+								position: relative;
+								width: 100%;
+								height: 600px;
+								margin: auto;
+								overflow: hidden;
+							}
 
-						.slides {
-							display: flex;
-							width: 100%;
-							height: 100%;
-							position: relative;
-						}
+							.slides {
+								display: flex;
+								width: 100%;
+								height: 100%;
+								position: relative;
+							}
 
-						.slide {
-							width: 100%;
-							height: 100%;
-							position: absolute;
-							top: 0;
-							left: 0;
-							opacity: 0;
-							transition: opacity 1s;
-						}
+							.slide {
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								opacity: 0;
+								transition: opacity 1s;
+							}
 
-						.slide img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
+							.slide img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
 
-						.description {
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							background-color: rgba(0, 0, 0, 0.3);
-							color: #fff;
-							padding: 5px;
-						}
+							.description {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								background-color: rgba(0, 0, 0, 0.3);
+								color: #fff;
+								padding: 5px;
+							}
 
-						.show {
-							opacity: 1;
-						}
-					</style>
-				</head>
+							.show {
+								opacity: 1;
+							}
+						</style>
+					</head>
 
-				<body>
-					<div class="slideshow-container">
-						<div class="slides">
-							<div class="slide">
-								<img src="/images/IMG_emmalens.jpeg" alt="Image 2">
-								<p class="description">On the train to Jungfraujoch (2019)</p>
+					<body>
+						<div class="slideshow-container">
+							<div class="slides">
+								<div class="slide">
+									<img src="/images/IMG_emmalens.jpeg" alt="Image 2">
+									<p class="description">On the train to Jungfraujoch (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/IMG_Helsinki.jpeg" alt="Image 1">
+									<p class="description">Helsinki, Finland (2022)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/newzealand_Omarama .jpeg" alt="Image 2">
+									<p class="description">Omarama, Newzealand (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Newzealand_Tekapo.jpeg" alt="Image 2">
+									<p class="description">Tekapo, Newzealand (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Lucerne_Switzerlands.jpeg" alt="Image 2">
+									<p class="description">Lucerne, Switzerland (2019)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Venice_Italy.jpeg" alt="Image 2">
+									<p class="description">Venice, Italy (2018)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Olbia_italy.jpeg" alt="Image 2">
+									<p class="description">Olbia, Italy (2022)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Lisbao_Protugal_2020.jpeg" alt="Image 2">
+									<p class="description">Lisbao, Protugal (2020)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Budapest_2022.jpeg" alt="Image 2">
+									<p class="description">Budapest, Hungary (2022)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Amsterdam.jpeg" alt="Image 2">
+									<p class="description">Amsterdam at Night (2019)</p>
+								</div>
+
+								<div class="slide">
+									<img src="/images/Ghent, Belgium.jpeg" alt="Image 2">
+									<p class="description">Ghent, Belgium (2019)</p>
+								</div>
+								<div class="slide">
+									<img src="/images/Florida_2022.jpeg" alt="Image 2">
+									<p class="description">Miami, Florida (2022)</p>
+								</div>
+
 							</div>
-							<div class="slide">
-								<img src="/images/IMG_Helsinki.jpeg" alt="Image 1">
-								<p class="description">Helsinki, Finland (2022)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/newzealand_Omarama .jpeg" alt="Image 2">
-								<p class="description">Omarama, Newzealan (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Newzealand_Tekapo.jpeg" alt="Image 2">
-								<p class="description">Tekapo, Newzealand (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Lucerne_Switzerlands.jpeg" alt="Image 2">
-								<p class="description">Lucerne, Switzerland (2019)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Venice_Italy.jpeg" alt="Image 2">
-								<p class="description">Venice, Italy (2018)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Olbia_italy.jpeg" alt="Image 2">
-								<p class="description">Olbia, Italy (2022)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Lisbao_Protugal_2020.jpeg" alt="Image 2">
-								<p class="description">Lisbao, Protugal (2020)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Budapest_2022.jpeg" alt="Image 2">
-								<p class="description">Budapest, Hungary (2022)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Amsterdam.jpeg" alt="Image 2">
-								<p class="description">Amsteram at Night (2019)</p>
-							</div>
-
-							<div class="slide">
-								<img src="/images/Ghent, Belgium.jpeg" alt="Image 2">
-								<p class="description">Ghent, Belgium (2019)</p>
-							</div>
-							<div class="slide">
-								<img src="/images/Florida_2022.jpeg" alt="Image 2">
-								<p class="description">Miami, Florida (2022)</p>
-							</div>
-
 						</div>
-					</div>
-					<script>
-						var slides = document.querySelectorAll('.slide');
-						var currentSlide = 0;
+						<script>
+							var slides = document.querySelectorAll('.slide');
+							var currentSlide = 0;
 
-						function nextSlide() {
-							slides[currentSlide].classList.remove('show');
-							currentSlide = (currentSlide + 1) % slides.length;
-							slides[currentSlide].classList.add('show');
-						}
+							function nextSlide() {
+								slides[currentSlide].classList.remove('show');
+								currentSlide = (currentSlide + 1) % slides.length;
+								slides[currentSlide].classList.add('show');
+							}
 
-						setInterval(nextSlide, 3000);
-					</script>
-				</body>
+							setInterval(nextSlide, 3500);
+						</script>
+					</body>
 
-				</html>
+					</html>
 
 
-				</header>
+
+					</header>
+				</section>
 
 			</article>
 
@@ -225,6 +228,24 @@
 					<header>
 						<h2><a>KPI analysis with MySQL Azure
 								Database</a></h2>
+					</header>
+					<a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="image fit"><img src="images/SQL.jpg"
+							title="source: Pexels" alt="" /></a>
+					<p>The project aims to design an interactive queries function of SQL by connecting the database from
+						Azure to evaluate the KPI performance.
+						Local Database (DB) connection to Azure is executed by using Azure Database for MySQL single
+						server(use Migration Wizard). In codespace, we can access Database which is exactly the same as
+						the Azure database, and with this, I created a Datawarehouse and loaded all the needed data from
+						the DB. Interactive queries can be perfromed in the codespace with the SQL interface. The goal
+						of this project is to let KPI evaluation be more efficient and updatable by connecting to a
+						cloud Database.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="button">Learn More</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a>KPI analysis with MySQL Azure Database</a></h2>
 					</header>
 					<a href="https://github.com/Emmawang00/SQL_KPI_analysis" class="image fit"><img src="images/SQL.jpg"
 							title="source: Pexels" alt="" /></a>
